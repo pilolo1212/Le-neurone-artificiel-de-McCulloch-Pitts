@@ -8,7 +8,7 @@ def mc_p_neuron(x, theta, inhibitory=None):
         return step_function(s - theta)
     else :
         for i in inhibitory:
-            if x[i] == 1:   # inhibitory input active
+            if x[i] == 1: 
                 return 0
         s=sum(x)
         return step_function(s - theta)
